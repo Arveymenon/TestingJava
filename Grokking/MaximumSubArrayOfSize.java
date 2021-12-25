@@ -1,5 +1,3 @@
-import java.lang.reflect.Constructor;
-
 public class MaximumSubArrayOfSize {
 
     private int[] arr = new int[]  {1, 3, 2, 6, -1, 4, 1, 8, 2};
