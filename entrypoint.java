@@ -1,22 +1,9 @@
-public class entrypoint extends Object1{
-    
-    entrypoint(String name, int numberSides, int perimeter) {
-        super(name, numberSides, perimeter);
-    }
+public class entrypoint{
 
-    public static void main(String[] args) {
-        Object1 shape = new Object1("test", 4, 20);
-
-        // Object1 shape = new Object2("test", 4, 20);
-        // shape.setName("Rectangle");
-    
-        // shape.setNumberSides(4);
-        // shape.setPerimeter(20);
-    
-        System.out.println("Shape: "+ shape.getName());
-        System.out.println("Number Of Sides: "+shape.getNumberSides());
-        System.out.println("Perimeter: " + shape.getPerimeter());
-
-        System.out.println("Extra: " + shape.extra());
+    public static void main(String[] args){
+        Object1 shape1 = new Object1();
+        System.out.println("Entry point created");
+        shape1.setName("shape1");
+        System.out.println(shape1.extra());
     }
 }
