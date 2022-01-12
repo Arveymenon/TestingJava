@@ -1,9 +1,11 @@
+package SlidingWindow;
+
 public class SlidingWindow1 {
 
     public int[] pubArray = new int[] {1, 3, 2, 6, -1, 4, 1, 8, 2};
     int K = 5;
     
-    SlidingWindow1() {
+    public SlidingWindow1() {
         print();
     }
 
