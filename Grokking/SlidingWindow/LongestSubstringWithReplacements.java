@@ -1,34 +1,30 @@
 package SlidingWindow;
 
-public class LongestSubstringWithReplacements {
-    String str = "abccde";
-    int K = 2;
+import java.util.HashMap;
+import java.util.Map;
 
-    public LongestSubstringWithReplacements(){
-        int start = 0, end = 0, first_change = 0, max_length = 0;
-        char c_char = str.charAt(end);
-        int bucket = K;
+public class LongestSubstringWithReplacements {
+    String str = "abbcb";
+    int k = 1;
+
+    public LongestSubstringWithReplacements() {
+        int start = 0, end = 0, maxCount = 0, maxLength = 0;
+        Map<Character, Integer> map = new HashMap<>();
 
         while(end != str.length()){
-            if(str.charAt(end) == c_char){
-                max_length = Math.max(max_length, end - start + 1);
-                end++;
-                continue;
-            } 
-            if(bucket == 0){
-                bucket = 3;
-                start = end = first_change;
-                c_char = str.charAt(end);
-                continue;
-            }
+            char rightChar = str.charAt(end);
+            map.put(rightChar, map.getOrDefault(rightChar, 0) + 1 );
+            maxCount = map.get(rightChar);
             
-            if(bucket == K){
-                first_change = end;
+            if(end - start + 1 - maxCount > k){
+                char leftChar = str.charAt(start);
+                map.put(leftChar, map.get(leftChar) - 1 );
+                start++;
             }
-            bucket--;
+
+            maxLength = end - start + 1;
             end++;
-            max_length = Math.max(max_length, end - start + 1);
         }
-        System.out.println("LongestSubstringWithReplacements: "+ max_length);
+        System.out.println(maxLength);
     }
 }

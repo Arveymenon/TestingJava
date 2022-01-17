@@ -1,7 +1,8 @@
-import SlidingWindow.*;
-class Root{
-    public static void main(String[] args){
+import TwoPointers.TripletSum;
+
+class Root {
+    public static void main(String[] args) {
         System.out.println("Hello World!");
-        new LongestSubstringWithReplacements();
+        new TripletSum();
     }
 }
