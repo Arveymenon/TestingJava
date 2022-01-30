@@ -1,9 +1,20 @@
+import Concepts.Abstraction.*;
+// import Concepts.Interfacing.*;
+import Concepts.Abstraction.Enums.Units;
+
 public class entrypoint{
 
     public static void main(String[] args){
-        Object1 shape1 = new Object1();
-        System.out.println("Entry point created");
-        shape1.setName("shape1");
-        System.out.println(shape1.extra());
+
+        System.out.println("Create Gaming PC");
+        System.out.println(" ");
+
+        CorsairX1 storage = new CorsairX1();
+        storage.setName("Corsair Test").setSize(20, Units.GB, "SSD");
+        
+        storage.printDetails();
+        // GamingPC pc = new GamingPC();
+        // pc.getPC();
     }
+
 }
