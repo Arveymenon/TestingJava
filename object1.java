@@ -4,11 +4,7 @@ public class Object1 implements Shape {
     private int numberSides;
     private int perimeter;
 
-    Object1(String name, int numberSides, int perimeter) {
-        this.name = name;
-        this.numberSides = numberSides;
-        this.perimeter = perimeter;
-    }
+    Object1() {}
 
     public String getName() {
         return this.name;

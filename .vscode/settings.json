@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "Grokking",
+        "Concepts/Abstraction/Abstract",
+        "Concepts/Abstraction/Enums"
+    ]
+}

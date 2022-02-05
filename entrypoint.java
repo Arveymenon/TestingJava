@@ -1,22 +1,20 @@
-public class entrypoint extends Object1{
-    
-    entrypoint(String name, int numberSides, int perimeter) {
-        super(name, numberSides, perimeter);
+import Concepts.Abstraction.*;
+// import Concepts.Interfacing.*;
+import Concepts.Abstraction.Enums.Units;
+
+public class entrypoint{
+
+    public static void main(String[] args){
+
+        System.out.println("Create Gaming PC");
+        System.out.println(" ");
+
+        CorsairX1 storage = new CorsairX1();
+        storage.setName("Corsair Test").setSize(20, Units.GB, "SSD");
+        
+        storage.printDetails();
+        // GamingPC pc = new GamingPC();
+        // pc.getPC();
     }
 
-    public static void main(String[] args) {
-        Object1 shape = new Object1("test", 4, 20);
-
-        // Object1 shape = new Object2("test", 4, 20);
-        // shape.setName("Rectangle");
-    
-        // shape.setNumberSides(4);
-        // shape.setPerimeter(20);
-    
-        System.out.println("Shape: "+ shape.getName());
-        System.out.println("Number Of Sides: "+shape.getNumberSides());
-        System.out.println("Perimeter: " + shape.getPerimeter());
-
-        System.out.println("Extra: " + shape.extra());
-    }
 }
