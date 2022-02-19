@@ -3,15 +3,15 @@ package BreadthFirstSearch;
 import java.util.ArrayList;
 import java.util.List;
 
-import BreadthFirstSearch.BinaryTree.BinaryTree;
-import BreadthFirstSearch.BinaryTree.Node;
+import BreadthFirstSearch.BinaryTree.*;
 
-public class LevelOrderTraversal {
-
+public class ReverseLevelOrderTraversal {
+    
     List<List<Integer>> bfs = new ArrayList<>();
-
-    public LevelOrderTraversal(){
-        BinaryTree mytree = new BinaryTree(2);
+    int height;
+    
+    public ReverseLevelOrderTraversal(){
+        BinaryTree mytree = new BinaryTree(4);
         Node root = mytree.root;
 
         this.createBFS(root, 0);
@@ -20,7 +20,13 @@ public class LevelOrderTraversal {
 
     public void createBFS(Node node, int level){
         if(node != null){
+            int currentLevel = level + 1;
+            createBFS(node.left, currentLevel);
+            createBFS(node.right, currentLevel);
+            
             List<Integer> levelData;
+
+            level = this.height - level;
 
             if(bfs.size() > level){
                 levelData = bfs.get(level);
@@ -32,9 +38,8 @@ public class LevelOrderTraversal {
             }
     
             // this.bfs.ad;
-            int currentLevel = level + 1;
-            createBFS(node.left, currentLevel);
-            createBFS(node.right, currentLevel);
+        } else {
+            this.height = level - 1;
         }
     }
 }

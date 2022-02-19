@@ -1,8 +1,9 @@
-import BreadthFirstSearch.BinaryTree.BinaryTree;
+import TwoHeaps.MaximizeCapital;
+import TwoHeaps.Problems.Problem1;
 
 class Root {
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        new BinaryTree(2);
+        new Problem1();
     }
 }

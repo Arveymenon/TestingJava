@@ -7,13 +7,11 @@ public class BinaryTree {
         this.level = level;
 
         this.root = new Node(1);
-        this.branchOut(this.root, 0, height);
-        
-        this.printTree(this.root);
+        this.branchOut(this.root, 1, height);
     }
 
     private void branchOut(Node node, int level, int height){
-        if(level < height){
+        if(level <= height){
 
             Node left = new Node((2 * node.value));
             Node right = new Node((2 * node.value) + 1);
@@ -25,7 +23,7 @@ public class BinaryTree {
         }
     }
 
-    void printTree(Node root){
+    public void printTree(Node root){
         if(root != null){
             System.out.println(root.value);
             printTree(root.left);
