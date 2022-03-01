@@ -22,8 +22,7 @@ public class SearchInInfiniteArray {
                 // slow = slow - 1;
                 op = mid;
                 fast = slow - 1;
-            }
-        }
+            }        }
         System.out.println(op);
     }
 }

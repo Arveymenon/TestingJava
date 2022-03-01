@@ -36,3 +36,6 @@ public class SearchInRotatedArray {
         return -1;
     }    
 }
+
+// Redo and understand the solution better
+
