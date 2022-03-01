@@ -3,20 +3,18 @@ import java.util.PriorityQueue;
 
 class temp {
     public static void main(String[] args){
-    new temp();
+        new temp();
     }
     
     temp(){
-        PriorityQueue<Integer> myQueue = new PriorityQueue<>();
-        // PriorityQueue<Integer> myQueue = new PriorityQueue<>(Collections.reverseOrder());
+        System.out.println(1%4);
+    }
 
-        myQueue.add(5);
-        myQueue.add(7);
-        myQueue.add(3);
-        System.out.println(myQueue.toString());
-        myQueue.poll();
-        System.out.println(myQueue.toString());
-        myQueue.remove(7);
-        System.out.println(myQueue.toString());
+    private boolean isAlphabet(char ch){
+        int num = Character.getNumericValue(ch);
+        if(num > -1 && num < 10){
+            return false;
+        }
+        return true;
     }
 }
