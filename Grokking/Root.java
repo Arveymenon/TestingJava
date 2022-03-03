@@ -1,8 +1,8 @@
-import ModifiedBinaryTreeSearch.Problems.SearchInRotatedArray;
+import TopKElements.KthSmallestNumber;
 
 class Root {
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        new SearchInRotatedArray();
+        new KthSmallestNumber();
     }
 }
