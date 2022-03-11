@@ -26,10 +26,10 @@ public class StudentConfig {
 
                     students.add(
                         new Student(
-                                "Name",
+                                "Student "+(i + 1),
                                 "email",
                                 LocalDate.of(year, Month.of(month), date),
-                                25
+                                25 + i
                         )
                     );
                 }
