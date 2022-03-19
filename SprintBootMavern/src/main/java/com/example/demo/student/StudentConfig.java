@@ -1,11 +1,9 @@
 package com.example.demo.student;
 
-import net.bytebuddy.utility.RandomString;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.nio.charset.Charset;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.ArrayList;
@@ -19,7 +17,7 @@ public class StudentConfig {
             return args -> {
 
                 List<Student> students = new ArrayList<>();
-                for(int i = 0; i < 10; i++){
+                for (int i = 0; i < 10; i++) {
                     int date = 1 + (int) (Math.random() * 10);
                     int month = 1 + (int) (Math.random() * 10);
                     int year = 2000 + (int)((Math.random() * 10));
