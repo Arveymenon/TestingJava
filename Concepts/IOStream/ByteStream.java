@@ -4,8 +4,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import javax.swing.plaf.synth.SynthStyleFactory;
-
 public class ByteStream {
     FileInputStream inputStream = null;
     FileOutputStream outputStream = null;

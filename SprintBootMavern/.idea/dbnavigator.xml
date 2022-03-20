@@ -29,13 +29,19 @@
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="03f84bfa-7d3a-45cc-bd48-bde5884d03ec">
       <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
+      <console name="temp" type="STANDARD" schema="information_schema" session="Main"><![CDATA[select * from "public".student]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="03f84bfa-7d3a-45cc-bd48-bde5884d03ec" object-ref="consoles/temp" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="03f84bfa-7d3a-45cc-bd48-bde5884d03ec" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="03f84bfa-7d3a-45cc-bd48-bde5884d03ec" dataset="public.student" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />

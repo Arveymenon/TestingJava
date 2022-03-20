@@ -1,8 +1,8 @@
-import Concepts.IOStream.ByteStream;
+import Concepts.Database.DBConnection;
 
 public class entrypoint{
 
     public static void main(String[] args){
-        new ByteStream();
+        new DBConnection();
     }
 }
