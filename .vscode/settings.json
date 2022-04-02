@@ -4,7 +4,8 @@
         "Grokking",
         "Concepts/Abstraction/Enums",
         "Concepts/Abstraction/Abstract",
-        ""
+        "",
+        "."
     ],
     "java.configuration.updateBuildConfiguration": "automatic"
 }
