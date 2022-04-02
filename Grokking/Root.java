@@ -1,9 +1,9 @@
-import MergeKSortedLists.SmallestNumberRange;
+import TwoPointers.ClosestTriplet;
 
 class Root {
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        new SmallestNumberRange();
+        new ClosestTriplet();
     }
 }
 

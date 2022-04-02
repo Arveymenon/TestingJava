@@ -1,7 +1,10 @@
 {
     "java.project.sourcePaths": [
+        "LeetCode",
         "Grokking",
+        "Concepts/Abstraction/Enums",
         "Concepts/Abstraction/Abstract",
-        "Concepts/Abstraction/Enums"
-    ]
+        ""
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic"
 }

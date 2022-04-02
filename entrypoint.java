@@ -1,8 +1,12 @@
-import Concepts.Database.DBConnection;
+import LeetCode.Solution;
+// import LeetCode.ValidSudoku;
 
 public class entrypoint{
 
     public static void main(String[] args){
-        new DBConnection();
+        
+        Solution soln = new Solution();
+        System.out.println(soln.countAndSay(4));
+        // new ValidSudoku();
     }
 }

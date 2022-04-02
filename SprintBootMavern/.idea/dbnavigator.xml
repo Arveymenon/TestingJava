@@ -33,9 +33,7 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="03f84bfa-7d3a-45cc-bd48-bde5884d03ec" object-ref="consoles/temp" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="03f84bfa-7d3a-45cc-bd48-bde5884d03ec" />
