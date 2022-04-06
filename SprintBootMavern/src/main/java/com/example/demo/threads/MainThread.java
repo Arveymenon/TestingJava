@@ -10,7 +10,6 @@ public class MainThread {
 
         try {
             t1.wait(4000);
-//            t1;
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

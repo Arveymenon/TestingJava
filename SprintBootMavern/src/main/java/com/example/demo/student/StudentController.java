@@ -17,6 +17,8 @@ public class StudentController {
 
     @Autowired
     public StudentController(StudentService studentService) {
+        System.out.println("Autowired student Controller");
+
         this.studentService = studentService;
     }
 
